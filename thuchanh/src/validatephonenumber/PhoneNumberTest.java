@@ -1,19 +1,20 @@
-package validateclassname;
+package validatephonenumber;
 
-public class ClassNameTest {
-    private static final String[] validClassName = {"C0223G", "A3456I"};
-    private static final String[] invalidClassName = {"H0223G", "O3456I"};
+public class PhoneNumberTest {
+    private static final String[] validphonenumber = {"84-0886230947", "84-0346534260"};
+    private static final String[] invalidphonenumber = {"a8-2222222222", "84-123454664a"};
 
     public static void main(String[] args) {
-        ClassNameExpamle classNameExample = new ClassNameExpamle();
-        for (var classname : validClassName) {
-            boolean isvalid = classNameExample.validate(classname);
-            System.out.println("classname is "+ classname + "is "+ isvalid);
+        PhoneNumberExpamle classNameExample = new PhoneNumberExpamle();
+        for (var phonenumber : validphonenumber) {
+            boolean isvalid = classNameExample.validate(phonenumber);
+            System.out.println("classname is "+ phonenumber + " "+ isvalid);
         }
-        for (var classname : invalidClassName) {
-            boolean isvalid = classNameExample.validate(classname);
-            System.out.println("classname is "+ classname + "is "+ isvalid);
+        for (var phonenumber : invalidphonenumber) {
+            boolean isvalid = classNameExample.validate(phonenumber);
+            System.out.println("classname is "+ phonenumber + " "+ isvalid);
         }
 
     }
 }
+
